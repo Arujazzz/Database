@@ -37,8 +37,9 @@ INSERT INTO company (company_name, city) VALUES ('company_3', 'city_3');
 INSERT INTO company (company_name, city) VALUES ('company_2', 'city_1');
 
 SELECT id, person_name FROM works WHERE company_name = 'bigbank';
-SELECT employee.id, employee.person_name, employee.city FROM employee, works WHERE employee.person_name = works.person_name AND works.company_name = 'bigbank';
-SELECT employee.id, employee.person_name, employee.street, employee.city FROM employee, works WHERE employee.person_name = works.person_name AND works.company_name = 'bigbank' AND works.salary > 10000;
+SELECT employee.id, employee.person_name, employee.city FROM employee, works WHERE  employee.id = works.id AND works.company_name = 'bigbank';
+SELECT employee.id, employee.person_name, employee.street, employee.city FROM employee, works WHERE employee.id = works.id AND works.company_name = 'bigbank' AND works.salary > 10000;
+SELECT employee.id, employee.person_name FROM employee, works, company WHERE employee.id = works.id AND works.company_name = company.company_name AND company.city = employee.city;
 
 
 SELECT id, person_name FROM works WHERE company_name != 'bigbank';
