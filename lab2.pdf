@@ -1,4 +1,0 @@
-1.Data Definition Language helps you to define the database structure or schema. DDL commands help you to create the structure of the database and the other database objects. Its commands are auto-committed so, the changes are saved in the database permanently. The full form of DDL is Data Definition Language.
-DML commands it to allow you to manage the data stored in the database, although DML commands are not auto-committed. Moreover, they are not permanent. So, It is possible to roll back the operation. The full form of DML is Data Manipulation Language.
-a)CREATE, DROP, ALTER, TRUNCATE
-b) SELECT, INSERT, UPDATE, DELETE, MERGE
