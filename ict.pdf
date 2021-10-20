@@ -47,6 +47,14 @@ g = 9.8
 ans = sqrt(g*d*2)
 print(ans)
 
+import math
+s = int(input())
+n = int(input())
+
+area = ((s**2)/(4*math.tan(180/n)))*n
+print(area)
+
+
 ex-24
 
 d = int(input())
