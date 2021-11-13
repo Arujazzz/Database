@@ -67,7 +67,6 @@ REVOKE UPDATE ON accounts FROM accountant;
 
 
 --3
-ALTER COLUMN date SET NOT NULL;
 ALTER TABLE transactions
 ALTER COLUMN src_account SET NOT NULL;
 ALTER TABLE transactions
