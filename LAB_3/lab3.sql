@@ -32,6 +32,7 @@ create table instructor
 		on delete set null
 	);
 
+
 create table section
 	(course_id		varchar(8),
      sec_id			varchar(8),
