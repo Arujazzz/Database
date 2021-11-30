@@ -32,6 +32,7 @@ CREATE TABLE order_items(
 
 --TASK_3
 
+
 CREATE TABLE students(
     full_name VARCHAR PRIMARY KEY,
     age INTEGER NOT NULL,
